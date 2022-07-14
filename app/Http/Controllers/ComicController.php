@@ -16,7 +16,7 @@ class ComicController extends Controller
     {
         $comics = Comic::all();
 
-        // return view('comics.index', compact('comics'));
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -44,6 +44,8 @@ class ComicController extends Controller
         $newComic->fill($data);
 
         $newComic->save();
+
+        return redirect()->route('comics.index', $newComic->id);
     }
 
     /**
@@ -52,9 +54,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
-        
+        return view('comics.show', compact('comic'));
     }
 
     /**

@@ -22,7 +22,7 @@
 
         <div class="mb-3">
             <label for="thumb" class="form-label">Thumb</label>
-            <input type="number" class="form-control" id="thumb" name="thumb">
+            <input type="text" class="form-control" id="thumb" name="thumb">
         </div>
 
         <div class="mb-3">
