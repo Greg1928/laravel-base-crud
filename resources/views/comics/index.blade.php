@@ -15,6 +15,11 @@
             <li>Sale Date: {{$comic->sale_date}}</li>
             <a class="btn btn-primary" href="{{route('comics.show', $comic->id)}}">More Info</a>
             <a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}">Edit</a>
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
             <hr>
         @endforeach
     </ul>   
