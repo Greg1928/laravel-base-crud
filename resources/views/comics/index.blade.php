@@ -14,6 +14,7 @@
             <li>Price: {{$comic->price}}€</li>
             <li>Sale Date: {{$comic->sale_date}}</li>
             <a class="btn btn-primary" href="{{route('comics.show', $comic->id)}}">More Info</a>
+            <a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}">Edit</a>
             <hr>
         @endforeach
     </ul>   
