@@ -12151,7 +12151,7 @@ fieldset:disabled .btn {
 
 .card-section {
   background-color: lightseagreen;
-  height: calc(100vh - 3.5rem);
+  height: calc(100vh - 5.5rem);
 }
 
 .card-section h1,
@@ -12203,6 +12203,7 @@ fieldset:disabled .btn {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
   border-radius: 10px;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .container h1,
@@ -12217,7 +12218,17 @@ fieldset:disabled .btn {
   color: whitesmoke;
 }
 
-.container button {
+.container button,
+.container a {
   margin-bottom: 1rem;
+}
+
+.container p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+header a {
+  font-weight: bold;
 }
 

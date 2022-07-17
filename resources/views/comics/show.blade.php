@@ -5,9 +5,9 @@
 @endsection
 
 @section('page-content')
+<div class="container">
    <h1>{{$comic->title}}</h1>
-   <img src="{{$comic->thumb}}" alt="">
-   <h2>Info</h2>
+   <img src="{{$comic->thumb}}" alt=""> 
    <p>{{$comic->description}}</p>
    <ul>
         <li>Series: {{$comic->series}}</li>
@@ -15,6 +15,7 @@
    </ul>
    <h3>Price: {{$comic->price}} €</h3>
    <p>
-    <a href="{{route('comics.index')}}">Back to Comics</a>
+    <a href="{{route('comics.index')}}" class="btn btn-danger"  >Back to Comics</a>
    </p>
+</div>
 @endsection

@@ -4,12 +4,13 @@
     Edit {{$comic->title}}
 @endsection
 
-@section('page-content')
+@section('page-content')   
+<div class="container">
     <h1>Edit {{$comic->title}}</h1>
 
     <form action="{{route('comics.update', $comic->id)}}" method="POST">
         @csrf
-        @method('PUT');
+        @method('PUT')
         
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
@@ -46,6 +47,7 @@
             <input type="text" class="form-control" id="type" name="type" value="{{$comic->type}}">
         </div>
 
-        <button type="submit" class="btn btn-primary">Edit</button>
+        <button type="submit" class="btn btn-warning    ">Edit</button>
     </form>
+</div> 
 @endsection
