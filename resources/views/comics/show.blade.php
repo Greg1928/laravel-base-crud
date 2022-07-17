@@ -15,7 +15,7 @@
    </ul>
    <h3>Price: {{$comic->price}} €</h3>
    <p>
-    <a href="{{route('comics.index')}}" class="btn btn-danger"  >Back to Comics</a>
+    <a href="{{route('comics.index')}}" class="btn btn-danger">Back to Comics</a>
    </p>
 </div>
 @endsection

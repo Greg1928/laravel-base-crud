@@ -47,7 +47,8 @@
             <input type="text" class="form-control" id="type" name="type" value="{{$comic->type}}">
         </div>
 
-        <button type="submit" class="btn btn-warning    ">Edit</button>
+        <button type="submit" class="btn btn-warning">Edit</button>
+        <a href="{{route('comics.index')}}" class="btn btn-danger">Back to Comics</a>
     </form>
 </div> 
 @endsection
