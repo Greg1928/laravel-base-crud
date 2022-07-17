@@ -1,0 +1,18 @@
+.container{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 10px;
+    margin-top: 1rem;
+    h1{
+        padding: 1rem 0;
+        text-shadow: 2px 2px red;
+        color: whitesmoke;
+    }   
+   label{
+    font-weight: bold;
+    color: whitesmoke;
+   }
+
+   button{
+    margin-bottom: 1rem;
+   }
+}

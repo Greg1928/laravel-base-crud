@@ -5,6 +5,7 @@
 @endsection
 
 @section('page-content')
+<div class="container" style="background-color: darkcyan;">
     <h1>Create a new Comic</h1>
 
     <form action="{{route('comics.store')}}" method="POST">
@@ -47,4 +48,5 @@
 
         <button type="submit" class="btn btn-primary">Create</button>
     </form>
+</div>
 @endsection
