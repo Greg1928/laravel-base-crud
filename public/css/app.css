@@ -12149,3 +12149,53 @@ fieldset:disabled .btn {
   }
 }
 
+.card-section {
+  background-color: lightseagreen;
+  height: calc(100vh - 3.5rem);
+}
+
+.card-section h1,
+.card-section .h1 {
+  text-align: center;
+  padding: 2rem 0;
+  text-shadow: 2px 2px red;
+  color: whitesmoke;
+}
+
+.card-section .list {
+  display: flex;
+  overflow: scroll;
+  background-color: darkslategray;
+}
+
+.card-section .list .comic {
+  min-width: 20%;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: darkcyan;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.card-section .list .comic .content {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.card-section .list .comic .content img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.card-section .list .comic .content h2,
+.card-section .list .comic .content .h2 {
+  text-shadow: 2px 2px red;
+}
+
+.card-section .list .comic .content p {
+  font-weight: bold;
+}
+
+.card-section .list .comic .content form {
+  display: inline-block;
+}
+

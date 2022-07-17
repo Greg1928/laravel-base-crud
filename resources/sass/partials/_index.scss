@@ -1,0 +1,46 @@
+.card-section{
+    background-color: lightseagreen;
+    height: calc(100vh - 3.5rem);
+
+    h1{
+        text-align: center;
+        padding: 2rem 0;
+        text-shadow: 2px 2px red;
+        color: whitesmoke;
+    }
+    .list{
+        display: flex;
+        overflow: scroll;
+        background-color: darkslategray;
+
+        .comic{
+            min-width: calc(100% / 5);
+            text-align: center;    
+            margin: 2rem;
+            border-radius: 10px;
+            background-color: darkcyan;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+            .content{
+                padding: 1rem 1rem 0 1rem;
+
+                img{
+                    width: 70%;
+                    border-radius: 10px;
+                }
+
+                h2{
+                    text-shadow: 2px 2px red
+                }
+
+                p{
+                    font-weight: bold;
+                }
+
+                form{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
